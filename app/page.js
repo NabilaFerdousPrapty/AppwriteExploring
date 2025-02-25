@@ -1,6 +1,6 @@
-"use client";
+'use client';
 import { useState } from "react";
-import { account, ID } from "./appwrite";
+import { account, ID } from "./test";
 
 const LoginPage = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
