@@ -30,16 +30,21 @@ const LoginPage = () => {
         <button type="button" onClick={logout}>
           Logout
         </button>
+
       </div>
     );
   }
 
   return (
     <div>
-      <p>Not logged in</p>
+      <p>
+        You are not logged in. Please login or register to continue.{" "}
+      </p>
+
       <form>
         <input
           type="email"
+          className="form-control"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
